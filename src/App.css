@@ -1,0 +1,40 @@
+body {
+    font-family: Poppins, serif;
+}
+
+.modal {
+    left: calc(50vw - 100px);
+}
+
+.spinner_class {
+    animation: spinner 1s infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Entire scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Adjust the width for thinness */
+} /* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+} /* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+} /* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

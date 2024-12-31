@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-calendar {
+    border: none !important;
+}
+
+abbr {
+    text-decoration: none !important;
+}
