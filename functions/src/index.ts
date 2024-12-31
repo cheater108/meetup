@@ -1,8 +1,10 @@
 import { onRequest } from "firebase-functions/https";
-import express from "express";
 import { bookSlot, getLastDay, getSlots } from "./controllers/slots";
+import express from "express";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 
 app.get("/slots", getSlots);
 app.post("/bookSlot", bookSlot);
